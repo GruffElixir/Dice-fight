@@ -56,7 +56,7 @@ function switchPlayer() {
 hold.addEventListener('click', function () {
   totScoreP1.textContent = Number(totScoreP1.textContent) + Number(scoreP1.textContent);
   totScoreP2.textContent = Number(totScoreP2.textContent) + Number(scoreP2.textContent);
-  if(totScoreP1.textContent > 9 || totScoreP2.textContent > 9) { 
+  if(totScoreP1.textContent > 99|| totScoreP2.textContent > 99) { 
     init()
     document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
     document.querySelector('.winPlate').classList.remove('hidden');
